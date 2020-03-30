@@ -7,11 +7,11 @@ import java.util.List;
 import dao.UserDAO;
 import model.User;
 
-public class DAOUser implements UserDAO {
+public class UserJdbcDAO implements UserDAO {
 
     private Connection connection;
 
-    public DAOUser(Connection connection) {
+    public UserJdbcDAO (Connection connection) implements {
         this.connection = connection;
     }
 
